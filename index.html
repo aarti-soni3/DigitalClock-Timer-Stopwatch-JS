@@ -9,14 +9,111 @@
 
 <body>
 
-    <section class="clock">
-    </section>
+    <Section class="content">
 
-    <section class="stopwatch">
-    </section>
+        <section class="header-container">
+            <h2> Digital Clock With StopWatch & Timer</h2>
+            <h4 id="type">Clock</h4>
+        </section>
 
-    <section class="timer">
-    </section>
+        <section class="main-container">
+            <section id="clock" class="clock">
+                <section class="clock-container">
+                    <div class="hours">
+                        <p id="clock-hours" class="number">03</p>
+                        <p>Hours</p>
+                    </div>
+
+                    <div class="minutes">
+                        <p id="clock-minutes" class="number">30</p>
+                        <p>Minutes</p>
+                    </div>
+
+                    <div class="seconds">
+                        <p id="clock-seconds" class="number">60</p>
+                        <p>Seconds</p>
+                    </div>
+
+                    <div class="ampm">
+                        <p id="clock-ampm" class="number">1000</p>
+                        <p>AM/PM</p>
+                    </div>
+                </section>
+                <section class="button-container">
+                    <button id="stopwatchBtn"> Stopwatch </button>
+                    <button id="timerBtn"> Timer</button>
+                </section>
+            </section>
+
+            <section id="stopwatch" class="stopwatch" hidden>
+                <section class="stopwatch-container">
+                    <div class="hours">
+                        <p id="stopwatch-hours" class="number">00</p>
+                        <p>Hours</p>
+                    </div>
+
+                    <div class="minutes">
+                        <p id="stopwatch-minutes" class="number">00</p>
+                        <p>Minutes</p>
+                    </div>
+
+                    <div class="seconds">
+                        <p id="stopwatch-seconds" class="number">00</p>
+                        <p>Seconds</p>
+                    </div>
+
+                    <div class="miliseconds">
+                        <p id="stopwatch-miliseconds" class="number">00</p>
+                        <p>Miliseconds</p>
+                    </div>
+                </section>
+
+                <section id="lap">
+
+                </section>
+
+                <section class="button-container">
+                    <button id="stopwatch-lapBtn" hidden> Lap </button>
+                    <button id="stopwatch-startBtn"> Start </button>
+                    <button id="stopwatch-resetBtn"> Reset</button>
+                    <button id="stopwatch-backBtn"> Back</button>
+                </section>
+            </section>
+
+            <section id="timer" class="timer" hidden>
+
+                <section class="timer-container">
+                    <div class="hours">
+                        <p id="timer-hours" class="number">00</p>
+                        <p>Hours</p>
+                    </div>
+
+                    <div class="minutes">
+                        <p id="timer-minutes" class="number">00</p>
+                        <p>Minutes</p>
+                    </div>
+
+                    <div class="seconds">
+                        <p id="timer-seconds" class="number">00</p>
+                        <p>Seconds</p>
+                    </div>
+
+                    <div class="miliseconds">
+                        <p id="timer-miliseconds" class="number">00</p>
+                        <p>Miliseconds</p>
+                    </div>
+                </section>
+
+                  <section class="button-container">
+                    <button id="timer-startBtn"> Start </button>
+                    <button id="timer-resetBtn"> Reset</button>
+                    <button id="timer-backBtn"> Back</button>
+                </section>
+
+            </section>
+        </section>
+
+    </Section>
 
 
     <script src="script.js"></script>
