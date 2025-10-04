@@ -1,59 +1,88 @@
 body {
-    background-color: rgb(200, 200, 200);
-    color: white;
+  background-color: rgb(200, 200, 200);
+  color: white;
 }
 
 .content {
-    width: 50%;
-    background-color: #d64c4c;
-    padding: 1.5em;
-    border: none;
-    border-radius: 1em;
-    box-shadow: 0px 0px 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 2em auto;
+  width: 45%;
+  height: 22em;
+  background-color: #d64c4c;
+  padding: 1.8em;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10em auto;
 }
 
 .clock-container,
-.stopwatch-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 0.625em;
-    box-shadow: 0px 5px 30px 0px #00000077;
+.stopwatch-container,
+.timer-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.625em;
+  box-shadow: 0px 5px 30px 0px #00000077;
+  /* padding: 1em; */
+  margin: 1.2em 0em;
+}
 
+#clock-hours,
+#clock-minutes,
+#clock-seconds,
+#clock-ampm,
+#stopwatch-hours,
+#stopwatch-minutes,
+#stopwatch-seconds,
+#stopwatch-miliseconds,
+#timer-hours,
+#timer-minutes,
+#timer-seconds,
+#timer-miliseconds {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.3em;
+}
+
+.hours > p:nth-child(2),
+.minutes > p:nth-child(2),
+.seconds > p:nth-child(2),
+.ampm > p:nth-child(2),
+.miliseconds > p:nth-child(2) {
+  text-align: center;
 }
 
 button {
-    margin: 1.5em 0em;
-    width: 8em;
-    height: 2.5em;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 0.625em;
-    box-shadow: 0px 2px 30px 0px #00000070;
+  margin: 1em 0em;
+  width: 10em;
+  height: 3.5em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 0.625em;
+  box-shadow: 0px 2px 30px 0px #00000070;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 30em;
-    margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30em;
+  margin: 1em 6em;
 }
 
 .lap-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 15em;
-    height: 2.2em;
-    margin: 1em auto;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0.625em;
-    box-shadow: 0px 2px 30px 0px #00000070;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15em;
+  height: 2.2em;
+  margin: 1em auto;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.625em;
+  box-shadow: 0px 2px 30px 0px #00000070;
 }

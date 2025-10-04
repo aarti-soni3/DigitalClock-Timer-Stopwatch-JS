@@ -12,30 +12,30 @@
     <Section class="content">
 
         <section class="header-container">
-            <h2> Digital Clock With StopWatch & Timer</h2>
-            <h4 id="type">Clock</h4>
+            <h1> Digital Clock With StopWatch & Timer</h1>
+            <p id="type">Clock</p>
         </section>
 
         <section class="main-container">
             <section id="clock" class="clock">
                 <section class="clock-container">
                     <div class="hours">
-                        <p id="clock-hours" class="number">03</p>
+                        <p id="clock-hours" class="number">00</p>
                         <p>Hours</p>
                     </div>
 
                     <div class="minutes">
-                        <p id="clock-minutes" class="number">30</p>
+                        <p id="clock-minutes" class="number">00</p>
                         <p>Minutes</p>
                     </div>
 
                     <div class="seconds">
-                        <p id="clock-seconds" class="number">60</p>
+                        <p id="clock-seconds" class="number">00</p>
                         <p>Seconds</p>
                     </div>
 
                     <div class="ampm">
-                        <p id="clock-ampm" class="number">1000</p>
+                        <p id="clock-ampm" class="number">00</p>
                         <p>AM/PM</p>
                     </div>
                 </section>
@@ -106,6 +106,7 @@
 
                   <section class="button-container">
                     <button id="timer-startBtn"> Start </button>
+                    <button id="timer-stopBtn" hidden> Stop </button>
                     <button id="timer-resetBtn"> Reset</button>
                     <button id="timer-backBtn"> Back</button>
                 </section>
@@ -116,7 +117,7 @@
     </Section>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
